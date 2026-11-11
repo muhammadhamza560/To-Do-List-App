@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Application</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Application Header -->
+        <header>
+            <h1>My To-Do List</h1>
+            <p>Plan your day, one task at a time.</p>
+        </header>
+
+        <!-- Add Task Section -->
+        <form id="taskForm" class="task-form">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a task title..."
+                autocomplete="off"
+            >
+
+            <button type="submit" class="add-btn">
+                + Add Task
+            </button>
+        </form>
+
+        <!-- Task Filters -->
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="pending">
+                Pending
+            </button>
+
+            <button class="filter-btn" data-filter="completed">
+                Completed
+            </button>
+        </div>
+
+        <!-- Task List -->
+        <div id="taskList" class="task-list">
+            <!-- JavaScript will display tasks here -->
+        </div>
+
+        <!-- Summary Section -->
+        <div class="summary">
+            <h3>Task Summary</h3>
+
+            <div class="summary-items">
+                <div>
+                    <span id="totalTasks">0</span>
+                    <p>Total</p>
+                </div>
+
+                <div>
+                    <span id="pendingTasks">0</span>
+                    <p>Pending</p>
+                </div>
+
+                <div>
+                    <span id="completedTasks">0</span>
+                    <p>Completed</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>
